@@ -15,3 +15,5 @@ export function formatSize(bytes: number): string {
   // Show up to 2 decimal places for non-integer values
   return `${size % 1 === 0 ? size : size.toFixed(2)} ${units[i]}`;
 }
+
+export const generateUUID = () => crypto.randomUUID();
